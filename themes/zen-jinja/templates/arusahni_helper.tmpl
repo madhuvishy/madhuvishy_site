@@ -60,17 +60,11 @@ lang="{{ lang }}">
 {% macro html_stylesheets() %}
     {% if use_bundles %}
         {% if use_cdn %}
-            <link href='//fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
             <link href="/assets/css/all.css" rel="stylesheet" type="text/css">
         {% else %}
             <link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
         {% endif %}
     {% else %}
-        {% if use_cdn %}
-            <link href='//fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
-        {% else %}
-            <link href="/assets/css/bitter.css" rel="stylesheet" type="text/css">
-        {% endif %}
         <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/code.css" rel="stylesheet" type="text/css">
