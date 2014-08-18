@@ -1,3 +1,8 @@
+<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+
+.page-content {
+    font-family: "Muli, sans-serif";
+}
 .clearfix {
   *zoom: 1;
 }
@@ -2152,7 +2157,7 @@ a:focus {
   font-size: 26.25px;
 }
 .page-content {
-  font-family: "Bitter", "Georgia", "Times New Roman", serif;
+  font-family: "Muli", sans-serif;
 }
 .page-content > .content {
   text-rendering: optimizeLegibility;
@@ -2577,3 +2582,4 @@ pre.code {
 .post + .post {
   margin-top: 48px;
 }
+
