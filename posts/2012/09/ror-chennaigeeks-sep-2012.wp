@@ -1,0 +1,91 @@
+Today's Chennai Geeks meetup dealt with an introduction to the architecture and basics of app development using the Ruby on Rails web framework, by <a href="https://twitter.com/iMagesh">Magesh</a>.
+
+
+It was a full fledged tutorial, with Magesh showing a demo of a sample blog application being built, but I thought I'd share some of the gyan that came out of discussions and questions at the session.
+
+
+
+<strong>Why Ruby?</strong>
+
+
+
+<a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a> is a programming language created by <a href="http://en.wikipedia.org/wiki/Yukihiro_Matsumoto">Yukihiro Matsumoto</a>(just call him Mats), with the aim of making programming fun, by combining the best practices of languages like Smalltalk, Ada, Lisp and Perl. The syntax is extremely readable, and you don't have to be a coding ninja to understand Ruby code.
+
+
+
+<strong>Why Rails?</strong>
+
+
+
+<a href="http://rubyonrails.org/">Rails</a> is a web framework introduced by <a href="http://david.heinemeierhansson.com/">DHH</a>. Best practices in building web apps involved certain tasks, and the goal of Ruby on Rails was to automate these tasks. RoR uses the <a href="http://http://en.wikipedia.org/wiki/Model-View-Controller">Model-View-Controller</a> architecture pattern  to organize application development.
+
+
+
+<strong>Wanna get started?</strong>
+
+
+
+Some links to get started with Ruby and Rails, suggested by Magesh:
+
+</p><ul>
+	<li><a href="http://guides.rubyonrails.org/getting_started.html">Tutorials and documentation on Rails</a></li>
+	<li><a href="http://pragprog.com/book/rails4/agile-web-development-with-rails">Book - Agile Web Development with Rails</a></li>
+	<li><a href="http://www.ruby-doc.org/docs/ProgrammingRuby/">Book - Programming Ruby</a></li>
+</ul>
+
+<div><strong>What makes it easy?</strong></div>
+
+<div></div>
+
+<div>
+
+
+
+Keeping with the paradigm of Write once, Use everywhere, Rails has the concept of Gems, that are like plugins, and can be added to your app, and used with great ease.
+
+
+
+</div>
+
+<div></div>
+
+<div>
+
+
+
+There are gems available to take care of many features you'd want on your app, like auth, social integration; and before you write any code on Rails, you almost always can find a Gem to do it for you. But take care to choose the ones that are up to date and supported by the developer.
+
+
+
+</div>
+
+<div></div>
+
+<div>
+
+
+
+Some of the gems Magesh demoed were <a href="https://github.com/plataformatec/devise">Devise</a>, for auth, <a href="https://github.com/nov/fb_graph">FB Graph</a>, for posting to facebook and <a href="https://github.com/intridea/omniauth">Omni Auth</a>, for auth using any of the social networks.
+
+
+
+</div>
+
+<div></div>
+
+<strong>Common Problems</strong>
+
+<ul>
+	<li>There are so many versions of Ruby. Which one do you choose? - The most commonly used version is MRI-Ruby, preferred because all ruby plugins(gems) are supported and maintained for this version. Mac users tend to prefer MacRuby.</li>
+	<li>How do you handle version management, to switch between different versions of Ruby? - This can be done using a version management tool. Commonly used tool is <a href="http://rvm.io">RVM</a>.</li>
+</ul>
+
+<strong>Deploying and scaling applications</strong>
+
+<ul>
+	<li>What support does Rails have for building scalable apps? - Rails provides caching mechanisms and you can achieve performance gains by applying page, action, and fragment caching. It also has support for memcached.</li>
+	<li>Deploying Rails? One can choose between, Cloud infrastructure provider + Dev op engineer || Cloud infrastructure provider + a tool like <a href="http://www.opscode.com/chef/">Chef</a> to take of deploying multiple servers || Heroku(that takes care of everything, but is a bit more expensive).</li>
+</ul>
+
+<div>Two and half hours had flown by, and what an interesting session, and a nice framework to learn. One more framework added to my learning wishlist. Thanks Magesh!</div>
+

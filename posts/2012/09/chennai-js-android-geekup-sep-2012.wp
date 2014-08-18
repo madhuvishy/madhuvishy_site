@@ -1,0 +1,44 @@
+When <a href="http://hasgeek.com">HasGeek</a> announced the <a href="http://geekup.in/2012/chennai-javascript-android">Chennai Geekup</a> on Javascript and Android at <a href="http://thestartupcentre.com/">The Startup Centre</a>, Egmore, it pleased me on multiple accounts. A tech event that was not in Bangalore. Covering Javascript which is my current new found love. Run by HasGeek. I signed up.
+
+
+Thanks to rains, and the usual Indian practice of not being on time, I went 30 minutes late, and Mani had already begun his talk on Javascript Everywhere.
+
+
+
+So let me summarize the four thirty minute talks that ensued.
+
+
+
+<strong>Javascript Everywhere - Mani Doraisamy</strong>
+
+
+
+The story of Javascript, told by somebody who'd seen it through it's introduction and rise. Javascript was first introduced by Netscape, with the usecase of being Java like, for it's ability to be written once and run anywhere, on the web, and being a scripting language, that was simple, and a mere extension to HTML and CSS, adding the ability to manipulate the DOM, targeting the designers, more than mainstream developers. This explains why Javascript was poorly designed in the first place. He went on to cover some interesting trivia on the negotiation between Sun Microsystems and Netscape to rename LiveScript as JavaScript, the evil Microsoft's not so evil introduction of JScript, and the like. Over the years, starting from GMail that demonstrated the capabilities of the AJAX use case, to server side implementations like Node.js, JS has matured immensely, but the success of the language even in it's toddler stages, lay entirely in the use case it was defined for.
+
+
+
+<strong>Building Rich JS Applications - Siddhartha Govindaraj</strong>
+
+
+
+Siddhartha's talk started with a #proudmoment for me and Karthik, because he demoed <a href="http://makkarlabs.in/badgeit">BadgeIt</a> as an example of the extent to which you go with Javascript to build rich web applications. He then used an app built by Silver Stripe Software, <a href="http://toolsforagile.com/">http://toolsforagile.com/</a>, to explain the concepts of MVC Architecture, templating, Web sockets, and unit testing. He spoke about JS frameworks that abstract all these concepts like Backbone.js (MVC) and Socket.io (web sockets), Porthole (iframe messaging) and Jasmine (unit testing). He went on to cover HTML5 technologies like Canvas, SVG, Web audio and video that are being used to build games, visualization applications, stunning examples being, <a href="http://hint.fm/wind/">WindMap</a> and <a href="http://bl.ocks.org/1256572">D3 Show Reel</a>. The message was, with HTML5, and the immense number of frameworks that ease the job, as well handle old browsers, rich javascript applications can be built easy, right away.
+
+
+
+<strong> New Frontiers in the Mobile Platform - Aravind Krishnaswamy</strong>
+
+
+
+Arvi, the Chennai boy, as he called himself, started with the glory of Alsa Mall and went on to talk on the glory of Android. With stunning charts and visualizations, he spoke of the huge market Android holds, versus the iPhone because of it's pricing. He addressed problems that developers face in developing mobile apps - fragmentation, pricing, size and density. Fragmentation cannot be done away with, and can be partly tackled by narrowing your target devices to the popular ones first. Suggestions for pricing - ads, in app pricing for certain features, which Arvi pointed has taken off recently. Native vs HTML5, what does one build in? Both have their pros and cons, but prefer native for the parts of the app that have high user interaction, and HTML5 where interaction is low. Attention spans in mobile apps is extremely low, and it matters to keep your users engaged. And guess what? The most number of app downloads from the Play store happen Sunday 9pm!
+
+
+
+<strong>Constructive Design for Android - Isaac John Wesley</strong>
+
+
+
+Isaac is the designer whose slides you are bound to fall for. Design in Isaac's words, is meant to communicate, and not to decorate. It might be hard for a developer to turn designer, but it's easy to think design. And to enable that, he spoke of the various best practices in design, such as less is more, using focus on the important parts, and color schemes, as mediums of user engagement. Though iPhone was the designer's heaven earlier, and Android was much cursed, with ICS and JellyBean, Google has come out with <a href="http://developer.android.com/design/patterns/index.html">design patterns</a> for Navigation, Action bars, Multi-pane layouts and the like, that enable building well designed, cross device applications. Pro tips: Mimic those small beautiful things from great apps like Path, keep your screens minimum, and tell a story. Remember, impact matters, not impression.
+
+
+
+There goes an awesome Geekup. I wish we had them more often.

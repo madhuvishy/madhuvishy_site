@@ -1,0 +1,33 @@
+The last week at Hacker School was filled with talks and workshops. I'm gonna try and recap the stuff I learnt over last week.
+
+
+It started with <a href="http://melchua.com/">Mel's</a> talk on <a href="http://de.slideshare.net/mchua/edutalk-w2014">Edupsych theory for hackers</a>. Mel is one of our residents, and coming from a world of academia and being a hacker, she has rich insights and conclusions on how hackers learn. Talking about the importance of being productively lost, test driven learning, pair programming, identifying your learning styles, and how motivation and mindset is key, she gave direction at a point when I was wondering how best I could learn when I was at Hacker School. The talk was hosted at the Ebay office in New York.
+
+
+
+Mel followed up on the talk by running a workshop the next day on identifying learning styles. People learn differently, Some active some passive, some sequentially some globally, etc. Over the workshop we all learnt what style suited us. This tremendously helped because I discovered I was a global learner who was clearly killing time trying to read a sequential textbook.
+
+
+
+Our other resident for the week <a href="http://web.mit.edu/~price/">Greg Price</a>, who is this amazing kernel hacker, ran a bunch of workshops that were immensely useful.
+
+
+
+The first was on "<a href="http://price.mit.edu/tracing-w2014/#1">What is this process doing?</a>" - about how to examine processes that we din't code, and debug them. He talked about two approaches, outside, from the OS, and from the inside. The first approached covered using tools like /proc/$PID, lsof, tshark and strace. And the other included profiling using perf or debugging using gdb or specifically for python, pdb. It was a whole new topic I'd never explored, and hoping to poke into this stuff more soon.
+
+
+
+He also did a source diving workshop, about how to effectively delve into huge repos of code we din't write and wish to contribute to. This is something I definitely learnt a lot from, and when I actually source dive using the tools he explained, I'll write about it in more detail.
+
+
+
+Alan, one of our facilitators, along with Greg, also ran a Git internals workshop, and talked about having a good mental model of how Git works, which helpssa lot in place of remembering a whole lot of commands blindly, and being completely lost in the face of "non-fast-forward updated" errors. I was pretty pleased I knew some of this stuff already, thanks to a talk <a href="https://twitter.com/vagmi">Vagmi</a> gave at Chennai Geeks a long long while ago.
+
+
+
+There was also the Goal setting workshop our alumni Stacey ran to help people who hadn't defined their goals for Hacker school do that. And a bunch of other smaller workshops, talks on jobs after hacker school, etc.
+
+
+
+Phew, that was a lot of workshops and talks. All incredibly useful. And making Hacker School totally worth it.
+

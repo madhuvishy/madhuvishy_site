@@ -1,0 +1,15 @@
+This week I made a tiny bit of progress on my Git Blame Light table plugin. Deciding that the Node Git library that we were using - <a href="https://www.npmjs.org/package/js-git">js-git</a> - had documentation that had fallen totally out of sync with the actual library, moved on to use another one called <a href="https://www.npmjs.org/package/simple-git">simple-git</a>, and 2 lines of code later, was able to clone a Git repo from clojurescript. Yay!
+
+```clojure
+(def simple-git (js/require (str path-to-node-modules "simple-git")))
+
+(.clone repo git-repo "/Users/madhu/src/hackerschool/test1/" #(println %))
+```
+ 
+
+Pretty sweet. Post this, I decided to take a break from the plugin to do other small important things. Pairing with HaSc facilitator, Tom, I learnt how to have a better workflow on the terminal. I'd always been a fan of split screen terminals, but never got around to setting it up. Now I have an iTerm based set up, and finally, split screens(Too late, yes). I also have a better mental model of how Vim plugins work, differences between Pathogen and Vundle to manage the plugins, and can finally, find my way around using different plugins. Went on to set up Fireplace.vim for Clojure, and it's definitely making life easier.
+
+
+
+So then, I wanted to build something shiny and worry about my light table plugin later. Tom suggested I build a ray tracer, and having no clue what it was, decided it must be built. I talked to another hackerschooler who is an expert at Computer Graphics, and understood<a href="http://en.wikipedia.org/wiki/Ray_tracing_(graphics)"> how ray tracers work. </a>I thought it might be a good idea to build it using a language that had good Math support, and decided to do it in Julia. I'm <a href="https://github.com/madhuvishy/ray-tracer">close to seeing some output</a>, however bad it might be, but still figuring out how the imaging library works in Julia. Will hopefully have some shiny pictures tomorrow :D
+

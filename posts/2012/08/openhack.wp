@@ -1,0 +1,128 @@
+August 11 2012. I walked into Sheraton Bangalore for Yahoo Open Hack, with expectations, and anticipations. Expectations, for an awesome weekend, delicious cheese cake, and free bean bag. Anticipations, on whether I'd really hack, and yeah, if the wifi would work, having had prior experience the last open hack.
+
+
+The Sheraton hotel and Yahoo hospitality totally swept me off. Immaculate and improvised procedures for registration, coupons for the bean bags along with the badges(so you could step out for a cup of tea without worrying about losing it), IT and tech help desks, gaming zones - Woah!
+
+
+
+<strong>Idea!</strong>
+
+
+
+It was time to find this little evading thought that could make our weekend worthwhile. Our team of 4, myself, <a href="http://yeskarthik.in">Karthik</a>, and juniors from college, <a href="http://www.facebook.com/abhinandanr">Abhinandan</a> and <a href="http://www.facebook.com/kart.simpson">Karthik</a>, comfortably couched on the bean bags, where on with our brainstorm. For the next two hours we started working on different ideas, A diary that helps you keep track of social activity, a tracker for books you read, a photo aggregator across different social networks, and stopped.
+
+
+
+Because someone else was working on each of them.
+
+
+
+<strong>Lunch :D</strong>
+
+
+
+Who cares about the idea? We'd come all the way from Chennai for the free food. So we hog on the evasive menu of Indian tandoori food, sizzling jamuns, pastries, mousse cake, ice cream. Life's purpose had been served.
+
+
+
+<strong>Idea, again.</strong>
+
+
+
+Abhinandan saved the day by hitting on a simple, doable, worthwhile idea. <a href="http://makkarlabs.in/fliptube">Fliptube</a>. A Youtube client that'd let you swipe quickly through your videos, on your laptops or smart phones. Using Yahoo technologies was necessary to qualify for the awards, so we decided to use YUI for the user interface, and YQL to pull data from the Youtube API.
+
+
+
+It would take two hours I thought. Of course I was all wrong.
+
+
+
+<strong>Anticipations</strong>
+
+
+
+My anticipations came true, almost. Idea formed, we enthusiastically opened our laptops to start off, and booh, wifi did not connect! We had come with all ammunition possible though. Datacards, android tethering, hotspots. Of course the great Karthik did not need any of these as his laptops always magically connect to the wifi in every single conference or hackathon we've been to, even if the router is switched off.
+
+
+
+Amazingly, the Yahoo IT team, showed disaster management mettle and ensured every one was connected, wired or wireless by afternoon.
+
+
+
+<strong>Hack time</strong>
+
+
+
+We were coding away, sailing through Youtube Javascript APIs, YQL, YUI, Javascript and what not. With us were friends from college, Vanisha, Preethi, Bharath, Nijanthan, and Russel, and we were ganged up, commenting and helping out on each others' ideas.
+
+
+
+Night fell. Dinner. Midnight. Food, yet again. Followed by a point of saturation where nothing seems to work. And sleep(at least for some of us).
+
+
+
+With dawn, and help from the Yahoo tech team, we had breakthroughs, and by 10 am we had a neat app to show off. App submissions and other procedures done, we continued to work on the smart little details until end of hack time, around 1.30 pm.
+
+
+
+<strong>Demo</strong>
+
+
+
+160 hacks. A record number for Yahoo. And it surprised me too. Unlike hackathons were people shy away at the end and decide not to present, this time, an amazing number of people worked through the night, and truly, the energy was inspiring.
+
+
+
+Our demo went off well. Time for bar and bar snacks, aka lychee  and apple juice time, followed by results time.
+
+
+
+<strong>The Climax</strong>
+
+
+
+Excitement ran high in the Grand Ball room as Anil Patel, the man behind the whole show, walked onto the stage to call out the finalists and declare that India was a free country and one could drink beer on the stage.
+
+
+
+Fifty Seven. We clap. Fifty seven. What us? Fifty seven. We are selected!
+
+
+
+When we'd recovered from our terribly late reactions to having been selected to the finals, happiness rushing through, we prepared for the final 90 second demo.
+
+
+
+Karthik Hariharan did an awesome job at the final demo with lofty talk of holding our own Fliptube open hack and destroying youtube. Claps and woots for the app. All cheered up, extravagant dreams and exaggerated winner talk ensued.
+
+
+
+<strong>The Twist</strong>
+
+
+
+The award ceremony had started. After the traditional organizers and sponsors thanks, the judges came on to announce the awards. Three third places, second, first, and a Grand prize, they said.
+
+
+
+Our wishes and claps went out to all the <a href="http://developer.yahoo.com/blogs/ydn/posts/2012/08/open-hack-india-delivers-once-again/">winners</a>.
+
+
+
+But I got all confused. All the winners got a cheque saying they'd won first prize, and a two day one night trip to a destination of their choice. Anil had announced that the second prize was Ipod nano watch, and the first was the trip. Where had third place come from? Why were they all getting the same cheques? The hackers choice award was supposed to be an iPhone no? There were 4 categories under which the apps were filed. Anil had mentioned category wise awards. Who won in what category? What was the criteria?
+
+
+
+And one of the <a title="Slide 36" href="http://www.slideshare.net/MurrayRowan/hacking-cracking-and-everything-else-you-need-to-know-to-survive-a-hackday">criteria</a> was that the apps used at least one Yahoo technology. And the grand prize winners, <a href="http://brox.in">Brock</a>, an app built on top of Microsoft's <a href="http://onx.ms">on{x}</a> and Twitter bootstrap, seems to have no trace of a Y! tech. Of course, considering that Yahoo build their own hack trackr system using Bootstrap, it probably qualifies as Y! tech.
+
+
+
+I may sound like a disappointed loser trying to blame the system for my incompetency. But no, not disappointed. Of all hackathons and conferences I'd been at, I enjoyed this one the most, and was more than happy to have made it to the finals. But a fair awards process is called for at such a huge event!
+
+
+
+<strong>Endings</strong>
+
+
+
+We returned home, a bean bag heavier, and hearts lighter after a weekend of fun, food, code, and excitement. Happy endings :)

@@ -1,0 +1,32 @@
+<html><body><p>Over the last two weeks I've continued to learn Clojure. Bunch of things I've done.
+
+
+1. Trying to read the book, <a href="http://joyofclojure.com/">Joy of Clojure</a>, which gives wonderful insight into why and how the decisions that shape Clojure were made. This is definitely not a beginner book, but I found it more comfortable to read as it talked about the bigger picture instead of going through syntax chapter by chapter. However I kept encountering pieces of code that were written in all but 4 lines, and I had to ponder for 30 minutes as to what the construct actually did and then figure out it was Clojure's <a href="http://clojure.org/functional_programming">arity overloading </a>mechanism.
+
+
+
+2. Solved the <a href="http://clojurekoans.com/">Clojure Koans</a>. There are Koans projects that exist for most of the prominent languages, and starting from a beginner level it ramps up how much you learn through those exercises without assuming any prior knowledge. Over a day and a half I solved the entire set, and felt much more ease in reading and writing syntax when I'd done that. My solutions are at <a href="https://github.com/madhuvishy/clojure-koans">https://github.com/madhuvishy/clojure-koans</a>.
+
+
+
+3. Started building a game in Clojure. I built a version of the Chain Reaction Android game in Javascript a while back. It's at - <a href="http://madhuvishy.in/ChainReaction.html">madhuvishy.in/ChainReaction.html</a>. I decided to port it to Clojure to try and understand how to build it without mutating arrays and variables which is pretty much how the game works in JS. I've just started work on this <a href="https://github.com/madhuvishy/chainreact-clj">game</a> and hope to finish it the coming week.
+
+
+
+4. Taking the<a href="https://www.udacity.com/course/st101"> Intro to Statistics</a> class. One of my interests has been to learn data science, and to get started, I'm taking the Udacity Stats class by Sebastian Thrun. It's been pretty interesting so far, but I'm just scratching the surface.
+
+
+
+5. Played with recursion at Jobs Friday. On fridays afternoons, to iron out job interview related concerns, we have working groups of people sitting together and solving problems on a theme every week. This week was recursion, and I solved a few problems using <a href="https://github.com/madhuvishy/friday">Clojure</a>.
+
+
+
+Aside all this, we were introduced to the Elm and Julia programming languages this week. Unlike people doing tutorials on languages like everywhere, HackerSchool made this phenomenal by getting <a href="https://twitter.com/czaplic">Evan Czaplicki</a> and <a href="https://twitter.com/StefanKarpinski">Stefan Karpinski</a>, the designers and developers of these languages talk about it themselves! They were also residents this week at Hacker School.
+
+
+
+I've been pretty happy with the volume I'm learning, but need to write more code! That's for the coming weeks.
+
+
+
+ </p></body></html>

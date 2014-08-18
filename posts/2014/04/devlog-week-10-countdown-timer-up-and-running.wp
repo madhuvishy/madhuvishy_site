@@ -1,0 +1,67 @@
+My first goal this week was to deploy the countdown timer app I've been working on in Om. I spent a while trying to figure out how to do it, tried using Heroku et.al and had no clue whatsoever what to do. But thanks to being at Hacker School, I asked folks, and soon with David Nolen's help, I figured that given my app was entirely on the frontend, I could just advance compile the app to JS and host it as a static site.
+
+
+I also had a Jquery plugin, and these additional JS dependencies are called "externs", and <a href="http://swannodette.github.io/2014/03/14/externs-got-you-down/">this blog</a> talks about dealing with them. Anyway, so I set up my different dev and release builds, and used advanced optimization and externs options for the release build.
+
+
+
+```clojure
+:cljsbuild {
+    :builds [{:id "dev"
+              :source-paths ["src"]
+              :compiler {
+                :output-to "cheating_countdown_dev.js"
+                :output-dir "out"
+                :optimizations :none
+                :source-map true}}
+             {:id "release"
+              :source-paths ["src"]
+              :compiler {
+                :output-to "cheating_countdown_release.js"
+                :optimizations :advanced
+                :pretty-print false
+                :preamble ["react/react.min.js"]
+                :externs ["react/externs/react.js"
+                          "resources/js/jquery.min.js"
+                          "resources/js/jquery.datetimepicker.js" ]}}]}
+```
+
+
+Then I setup a static app on Webfaction and wrote a tiny bash script to compile and copy the contents to my server.
+
+
+
+```bash
+lein cljsbuild once release
+
+scp -r resources index.html cheating_countdown_release.js <SERVER ADDRESS>:<STATIC APP DIRECTORY>
+
+```
+
+
+Then I had my app up and running here: <a href="http://countdown.madhuvishy.in">http://countdown.madhuvishy.in</a>. So far so good.
+
+
+
+I added a couple of features, one - Undo. Undo was not something one looked to have in a countdown timer, but given I was using Om, I had to test time travel. And it was so <a href="http://swannodette.github.io/2013/12/31/time-travel/">simple</a> to do. I had to decide what to store in the global app state and local component state in order to do this, and move the deadline to app state and remaining time to local state, which I had the other way round before to make undo happen nicely.
+
+
+
+Other was the drunk mode, which is kinda pointless, but meh, in case you want to mask reality and see random times being countdown to, use it, or not.
+
+
+
+So there's my countdown timer, the full code's <a href="http://github.com/madhuvishy/cheating-countdown">here</a>.
+
+
+
+The other interesting thing this week was the Monday talk, that for the first time happened at Etsy. The talk was by one of Etsy's product managers on how to remain a hacker while at work. The talk was great, but even more awesome was the tour of Etsy's office. Everything in the office was spiked with creativity and was artistic. From floors to desks to walls to ceilings, it was all handmade by local artists or Etsy sellers, and was incredible. Definitely an office space anyone would love to work at!
+
+
+
+I also spent a little bit of time pairing with fellow HackerSchooler Will Sommers on his Online Github repo viewer app in Om, leading to discussions on the philosophy behind what to store in local and global state in Om, which was insightful and fun.
+
+
+
+I attended my first Meetup event today! The NYC Clojure Users group put together a hackday hosted at Pivotal Labs. It was awesome meeting other clojure devs and hearing about stuff they were working on. I spent my time figuring out the web stack in Clojure and how to put Ring, Compojure, EDN, Datomic etc together to build a webapp. I thought I'd build a URL shortener with all this stuff, but got as far as <a href="http://github.com/madhuvishy/url-shortener">Hello world</a> today. Rest in next.
+

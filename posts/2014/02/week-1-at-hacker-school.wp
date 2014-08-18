@@ -1,0 +1,68 @@
+It's been one amazing week here.
+
+
+<strong>Day 0: The women dinner</strong>
+
+
+
+The women facilitators of Hacker School put together a low key dinner for all the girls of the batch on the day before the batch started. For the first time, I was walking in the snow while it was snowing to get to the dinner at Brooklyn. There are 14 girls of 50, a little lower than the previous batches. But having come from a world where I'm usually the only girl in the room at hackathons I helped run at Chennai Geeks, 14 girls is a huge number. And I was elated to meet all of them, and was thoroughly taken in by the diversity - computer science grads who rock climbed, geophysicists learning web dev, to name a few. After hours of immersive discussions, out of which mock prototypes of very interesting devices came up, I was headed home, totally excited for the next day.
+
+
+
+<strong>Day 1: The beginning</strong>
+
+
+
+I walked into the HackerSchool space at SoHo, and, I was stunned. A cute welcome breakfast spread with muffins and croissants and caffeine on one side, an Apple II computer and a library that you'd want to devour on the other. And over 50 amazing people, all set out to become the best programmers they could be in the next three months.
+
+
+
+As the room abuzz with introductions and networking calmed down, the founders and facilitators did a lovely job of welcoming us. Explaining to us the social rules, asking us what are anticipations and aspirations were for our time there, and giving sound guidance on how to handle them. The number of people and the experience they came with overwhelmed everyone, making us wonder if we really deserved to be here, but they convinced us that we did indeed.
+
+
+
+Swearing to make the best of my luck to be there, I went and made my plan for the day. I've wanted to start with functional programming, and failed my first two attempts at doing that. So I decided I'd learn a bit of Clojure to get started. I spent a few hours learning syntax and solving problems on 4clojure.com.
+
+
+
+After dinner from Chipotle - on Monday's everyone stays and has dinner together at the space, I was off, sinking in all the awesome new experiences of the day.
+
+
+
+<strong>Day 2: Checkins</strong>
+
+
+
+The only one piece of <del>rule</del> instruction at HackerSchool is Checkins. At 10.30, you meet up with a group of people you are assigned to, and talk about your progress for the previous day and goals for the day. It helps to be socially accountable and keeps you motivated, and the groups change every 2 weeks.
+
+
+
+I checked in with my group and told them I was planning to a small project with Clojure, because working through books got boring for me after a while. I paired with a friend who was interested too, Pablo, and started working on a bot for Zulip, the IRC like chat system used internally at HackerSchool.
+
+
+
+<strong>Day 3: Project 1 done</strong>
+
+
+
+The <a href="http://github.com/madhuvishy/zulip-focus">zulip bot I built in Clojure</a> helps you read on the command line filtered out messages from streams one is subscribed to. There is way too much traffic on Zulip and this might help in not getting lost reading those but focussing on only things you want to read. And it worked.
+
+
+
+<strong>Day 4: First presentation and board game</strong>
+
+
+
+I spent the whole of thursday working through the first lecture of the famed SICP MIT course, and attempted solving the associated problems in <a href="http://github.com/madhuvishy/sicp">clojure</a>. Every thursday there are optional presentations on what people have been working on, and with my teammate, I demoed my bot. Of course Murphy came in and stepped on the API rate limit and it din't work during the presentation. But I had something to show, and that felt good. Although @davidad demoed how he built - <a href="https://vine.co/v/MWLew1EBbB3">https://vine.co/v/MWLew1EBbB3</a> - on the Apple II, and stole the show. /\
+
+
+
+In the evening, some of the Alumni from previous batches came in, to organize Game night - of pizzas and board games and consoles. I was dragged away from incessant chatter with alumni to play a game called <a href="http://www.amazon.com/Alderac-Entertainment-Group-5104AEG-Letter/dp/B00AGJ4HC2">Love Letter</a>, a card game involving deduction and luck, and as luck would have it, I won the first game.
+
+
+
+If one thought of staying there longer, one was disturbed by the snow storm they had endeavored earlier in the day and the rain outside, and one left.
+
+
+
+And thus ended my first and most terrific week at HackerSchool. Devlog on my project coming up next.

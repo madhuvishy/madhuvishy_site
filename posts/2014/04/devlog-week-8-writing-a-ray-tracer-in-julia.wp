@@ -1,0 +1,128 @@
+It is real long since I studied coordinate geometry or computer graphics. This last week, dusting the very little remains of what I knew, I decided to work on a ray tracer. When I started, I did not know what a ray tracer was. Slowly, I understood that it was one algorithm that is used to construct a 3D scene on a 2D screen. Broadly, this is how it works
+
+
+```julia
+Define the eye/camera/viewpoint
+
+Define the screen in m*n pixels
+	
+Shoot a ray for each pixel in the screen from the eye. For each ray,
+	Find nearest intersected surface
+	Find a color for the point based on surface reflection/refraction or the light source and shading model
+	Plot the color on the pixel
+```
+
+I decided to build one that would trace spheres, so I had to define 3 major types - Vector, Ray, Sphere, and a helper type Intersection to store where an object intersected with the screen. 
+
+```julia
+type Vector
+	x::Real
+	y::Real
+	z::Real
+end
+
+type Ray
+	origin::Vector
+	direction::Vector
+end
+
+type Sphere
+	center::Vector
+	radius::Real
+	color::Vector
+end
+
+type Intersection
+	point::Vector
+	distance::Real
+	normal::Vector
+	object
+end
+
+```
+
+Interestingly when I went about defining methods for the vector, I found Julia had inbuilt support for finding dot and cross products, so all I had to do was piggyback on those implementations and build my vector class. Also, thanks to <a href="http://julia.readthedocs.org/en/latest/manual/methods/">Julia's multiple dispatch mechanism</a>, overriding inbuilt operators was as simple as this:
+
+
+
+```julia
+function +(a::Vector, b::Vector)
+	return toVec(toList(a) + toList(b))
+end
+```
+
+That done, I went about implementing the core algorithm, and a couple of simple shading models, being <a href="https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html#color">Lambertian</a> and the <a href="http://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model">Blinn Phong</a> shading models.
+
+Once I'd implemented it all, and fixed all bugs that produced seemingly awesome but wrong images, the main loop consisted of this:
+
+```julia
+for x in 1:imageWidth, y in 1:imageHeight
+	traceWorker(x, y, imageArray, cameraPos, lightSource, objects) 
+end
+
+//See full implementation <a href="https://github.com/madhuvishy/ray-tracer/blob/master/tracer.jl#L119">here</a>
+```
+
+I used <a href="https://github.com/timholy/Images.jl">Images.jl</a> plugin, to build the image, and <a href="https://github.com/timholy/ImageView.jl">ImageView</a> to display it, and when I ran my code with the above main loop I got something like this:
+
+```
+☁  ray-tracer [master] ⚡ time julia tracer.jl
+
+julia tracer.jl  11.55s user 0.26s system 98% cpu 11.933 total
+
+```
+
+But having used Julia, I had to put it's parallel processing capabilities to test. And because each of the calculations in ray tracing are independent of each other, I could put <a href="http://julia.readthedocs.org/en/latest/manual/parallel-computing/#parallel-map-and-loops">this</a>, to use. And now my loop became...
+
+```julia
+@parallel for x in 1:imageWidth, y in 1:imageHeight
+	traceWorker(x, y, imageArray, cameraPos, lightSource, objects) 
+end
+
+//See full implementation <a href="https://github.com/madhuvishy/ray-tracer/blob/master/tracer.jl#L119">here</a>
+
+```
+
+Sweet! Let's check the new running time.
+
+
+```
+☁  ray-tracer [master] time julia tracer.jl
+
+julia tracer.jl  6.44s user 0.11s system 99% cpu 6.566 total
+
+```
+
+Yay! Down by almost 50%. Pretty sure there are more ways to optimize my code, but this is how far I've gotten till now.
+
+
+
+<em><strong>Now, for our final showdown.</strong></em>
+
+
+
+<a href="/wp-content/uploads/2014/04/Screen-Shot-2014-03-31-at-5.18.54-PM.png"><img src="/wp-content/uploads/2014/04/Screen-Shot-2014-03-31-at-5.18.54-PM-280x300.png" alt="Screen Shot 2014-03-31 at 5.18.54 PM" width="280" height="300" class="alignnone size-medium wp-image-202"></a>
+
+
+
+Woah, but no...
+
+
+
+<a href="/wp-content/uploads/2014/04/Screen-Shot-2014-04-01-at-11.17.16-AM.png"><img src="/wp-content/uploads/2014/04/Screen-Shot-2014-04-01-at-11.17.16-AM-281x300.png" alt="Screen Shot 2014-04-01 at 11.17.16 AM" width="281" height="300" class="alignnone size-medium wp-image-203"></a>
+
+
+
+Ummm, circles or spheres?
+
+
+
+<a href="/wp-content/uploads/2014/04/Screen-Shot-2014-04-03-at-5.14.02-PM.png"><img src="/wp-content/uploads/2014/04/Screen-Shot-2014-04-03-at-5.14.02-PM.png" alt="Screen Shot 2014-04-03 at 5.14.02 PM" width="556" height="593" class="alignnone size-full wp-image-204"></a>
+
+
+
+Yes this. <insert dramatic bow and exit> 
+
+
+
+Thanks to fellow HackerSchooler Lita Cho for patiently explaining how ray tracers work :) Check it out at: <a href="https://github.com/madhuvishy/ray-tracer/">https://github.com/madhuvishy/ray-tracer/</a>

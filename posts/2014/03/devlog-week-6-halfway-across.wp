@@ -1,0 +1,49 @@
+<strong>LightTable</strong>
+
+
+
+I started the week thinking I should build a plugin for LightTable, the awesome opensource IDE built in clojurescript. I learnt loads reading <a href="http://www.chris-granger.com/2013/01/24/the-ide-as-data/">Chris Granger's blog </a>on the Behavior Object Tag(BOT) model that Light Table uses. When I started reading the IDE's code, it amazed me how easily one could edit code inside the same IDE and reload it and there! you have your new editor. I've always viewed editors like an end user, I may even write a plugin, but play around with the code? /me thinks Eclipse. Nah. But playing with LightTable was so incredibly easy!
+
+
+
+So pairing with <a href="https://twitter.com/ptn777">@ptn777</a>, I started working on a plugin that would bring up a fancy Git Blame view in the lines of<a href="https://github.com/tpope/vim-fugitive"> Fugitive Vim's :GBlame</a>. It's no where there now, anyway.
+
+
+
+Starting with forking the example <a href="https://github.com/LightTable/Declassifier">Declassifier</a> plugin, we got rid of all it's functionality to create our own brand new Hello World plugin. First thing - compile error. git blame_compiled.js -&gt; File not found. The compiled JS file had no space in it, but it was looking to load one with a space. Then we figured that naming it as "Git Blame" in the plugin.edn file caused it, and changing it to "GitBlame" fixed it. Was LightTable not handling the names right? Plan was made to fix that first and submit a pull request :D
+
+
+
+To our disappointment, it kinda was doing the right thing. Our behaviors file listed the JS file to look for, and did not have a space in the name. So it was generating a file as dictated by plugin.edn and looking for the file as mentioned in behaviors. So if they are consistently named, it worked fine. Hmmm.
+
+
+
+So then we made our very own Hello World plugin. And what did it do? Alert Hello World on every key press. And then one had to endure that until we got rid of the code and restarted Light Table in order to escape our abominable plugin.
+
+
+
+In order to integrate Git, we found this library called <a href="https://github.com/creationix/js-git">js-git</a>, and after finding how to use node modules within clojurescript, tried playing with it. Got stuck at the point where we were clueless how to write callback functions that js-git required, at which point we suspended working on it. Need to get back to it this week.
+
+
+
+Interestingly though, in the process of hacking LightTable, I broke it somehow (no clue how to replicate it), so that file save in LightTable wouldn't work. That also made me wonder how easy it is to break this IDE! One foolish programmer is all it takes.
+
+
+
+<strong>Courses</strong>
+
+
+
+I made progress on the Algorithms, and Intro to Stats course. I learnt about Random selection and Minimum Cut of graphs this week, and of course, implemented those in Clojure :) The stats class has gotten a lot math formulae-ish though, what with Binomial distributions and all that.
+
+
+
+<a href="http://http-kit.org/"><strong>HTTPKit</strong></a>
+
+
+
+The theme of the job related friday activities this week was to build a bitly like URL shortener. It's a simple web app, and felt trivial to do in Python/Flask or frameworks I've worked a lot with, so I used the chance to explore HTTPKit and figure out how to do it using Clojure. The HttpKit library was a breeze to use to set up a simple server, although I'm yet to wrap my head around the WebSocket and Long Polling functionalities it offers. I never finished building a URL shortener, but hey, I learnt what I wanted to.
+
+
+
+Halfway across. Halfway to go.

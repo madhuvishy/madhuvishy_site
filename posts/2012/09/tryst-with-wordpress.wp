@@ -1,0 +1,40 @@
+<html><body><p>Over the last two days I set up wordpress for makkarlabs.in - my first
+attempt at wordpress. The idea was to put up the apps we build there, along
+
+with related blogs. Though the home page could have been written in HTML
+
+ourselves, I was for wordpress because adding another app would just mean a
+
+new post. And I found Portfolio Press[1], a nice wordpress theme that comes
+
+with the Portfolio post type[2] plugin, so could achieve exactly what I
+
+wanted.
+
+
+
+Of course some more tweaks in the theme and plugin, some PHP and patience
+
+was involved in doing the whole thing. Added Twitter Feed[3] plugin too -
+
+the plugin's great, it just took one line to include it in the sidebar, I
+
+wish it would refresh real time though. Otherwise, I think it looks neat
+
+now.
+
+
+
+And I wrote my blog [4] on how we built badgeit :) Productive few days I
+
+say.
+
+
+
+[1] http://wptheming.com/2010/07/portfolio-theme/
+
+[2] http://wordpress.org/extend/plugins/portfolio-post-type/
+
+[3] http://wordpress.org/extend/plugins/wp-twitter-feed/
+
+[4] http://makkarlabs.in/blog/building-badgeit/</p></body></html>

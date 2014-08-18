@@ -1,0 +1,51 @@
+I never thought I'd write my first ever devlog on building something in
+Javascript, which pretty much remained the most mysterious language in my
+
+head until last month, when Karthik and I started working on BadgeIt[1].
+
+
+
+Came a long way from staring at JS/JQuery and wondering what the hell does
+
+that piece of code do, in the past 4 weeks. Feels good.
+
+
+
+Had this issue when we tiled the badges that browser scales it up and it
+
+doesn't match the input size in inputs. Solved it by fixing size in CSS
+
+physical units. But over a 100 badges, with high res images like 300 dpi,
+
+it crashed the browser :/ So found this neat library, jspdf[2], and now,
+
+one can print all badges to PDF, fixing paper size and orientation of their
+
+choice. And guess what, thanks to HTML5 FS api, 23.5mb pdf's create and
+
+download in the blink of an eye. Yay!
+
+
+
+Went on to add Sign in with Google to keep track of User info. The Google
+
+Javascript client api is in bad need of better docs. Karthik wrote App
+
+Engine Java service to store user info in the datastore, so we can write to
+
+them for sample badges and stuff.
+
+
+
+Added social plugins using AddThis[3], and minor UI improvements to the
+
+site. Some more polishing before pushing to prod today. Should write blog
+
+on how this app was built soon.
+
+
+
+[0] - http://github.com/makkarlabs/badgeit
+
+[1] - http://github.com/MrRio/jspdf
+ [2] - http://addthis.com

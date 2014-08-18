@@ -1,0 +1,47 @@
+This week I completed building the Chain Reaction game I started building the previous week. I previously built it in Javascript (<a href="http://madhuvishy.in/ChainReaction.html">Play</a>) , and it was super fun building it in Clojure (<a href="https://github.com/madhuvishy/chainreact-clj">Code</a>).
+
+
+There are some key differences to the approach I had for the game in Clojure and in JS. Although, after building the game in Clojure, I knew I could have built it similarly in Javascript, but the approach was intuitive in Clojure.
+
+
+
+1. Separation of Concerns
+
+
+
+In JS, I used the Fabric canvas library to build the game, and all the UI code along with board state was all in one big hotchpotch. (/me cringes). I separated the layers clean in Clojure, the core game logic is a clean interface, and there is one method to get the updated state of the board given the old board, player, and move, and one to check if there is a winner.
+
+
+
+2. No huge N*N array to store EVERYTHING.
+
+
+
+In JS, I had a n*n matrix for board size n, and had all the cell and orb UI objects along with their state (/me cringes) dumped into it. When I built it in Clojure, I had a map with the following structure that only had the cells that had any orbs in it.
+
+```clojure
+{ row {col {:owner owner, :curr_orbs curr_orbs :max_orbs max_orbs} } }
+```
+
+
+3. No nuking state.
+
+
+
+The entire game in JS worked by modifying the global data structure for the board and the variables for the current player. With all that absent in clojure, getting a new board and player happens functionally, which is super clean.
+
+
+
+4. No Fancy UI.
+
+
+
+This is just me deciding it is pointless to build a game in Swing, and building a <a href="https://github.com/madhuvishy/chainreact-clj/blob/master/README.md">pretty printed version</a> on the console instead.
+
+
+
+Many such differences, but key idea: just by picking up Clojure as a tool to build the game, the same stupid programmer me who wrote cluttered code in JS 2 months back, can write clean code, which is what I find amazing about the language and the functional approach. I've also fallen in love with the map, reduce, and filter functions, and wondering how I lived without those till now.
+
+
+
+Apart from the game, I made some more progress on the Intro to Statistics class I was taking. This week should see more mileage on that.

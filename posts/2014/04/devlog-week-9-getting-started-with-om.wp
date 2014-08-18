@@ -1,0 +1,29 @@
+I started this week in the enthusiasm of going back to Clojure, and learning something new. I've been wanting to toy with ClojureScript, and there's been interest in Om, a ClojureScript wrapper over Facebook's React JS, and decided I'd pick it up and build something.
+
+
+With perfect timing, the awesome David Nolen, who built Om, gave a talk on Monday night at Ebay on Om, and the philosophy behind how Om apps are written, and how they could be extended to regular frontend building. Om benefits from the great decisions React's engineers made, and the immutable data structures built into ClojureScript, but, it is almost, esoteric. It took me quite sometime for stuff to click in my mind, and I'm still not sure if I have it all.
+
+
+
+With help from fellow HackerSchooler <a href="https://twitter.com/briankimisms">@briankimisms</a>, I got started on building a countdown timer in Om. You choose a date and time, and the timer counts down to it, and stops at 0. Pretty simple. I might also build a drunk version of the timer that will show you a speeded up version of the timer in case you just wanna speed up time and not really wait for something to happen. Don't ask me why a timer would do any such thing. It's drunk.
+
+
+
+I should deploy what I have to a server, and have been trying to figure out how exactly to do it in Heroku, and may be later in Webfaction, but that's for the coming week. The code so far - https://github.com/madhuvishy/cheating-countdown, and this is how it looks:
+
+
+
+<a href="/wp-content/uploads/2014/04/Screen-Shot-2014-04-13-at-6.36.34-PM.png"><img src="/wp-content/uploads/2014/04/Screen-Shot-2014-04-13-at-6.36.34-PM.png" alt="Leaving NYC in..." width="1260" height="616" class="size-full wp-image-221"></a>
+
+
+
+Apart from this, I code reviewed my ray tracer with HackerSchooler <a href="https://twitter.com/slendrmeans">Carl Vogel</a>, and got super valuable feedback on writing better idiomatic Julia. I'm yet to incorporate his suggestions into my code, but should have that done soon.
+
+
+
+I attended a video conference talk on <a href="https://twitter.com/slendrmeans">OmChaya</a>, a full fledged application built using Om, by Sean Grove, and, <insert jaw drop></insert>. His talk gave me a better understanding of how well Om and in turn React could be put to use to solve real problems, like user activity history tracking, etc, and got me more enthusiastic about Om.
+
+
+
+Let's see where I get with it next week. Till then.
+

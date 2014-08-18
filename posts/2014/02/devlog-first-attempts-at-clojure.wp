@@ -1,0 +1,32 @@
+I've been wanting to learn functional programming for quite sometime. I've had two failed attempts at SICP and the Scala course on coursera, so in my first week at Hackerschool, I'll decided to take a swing at Clojure.
+
+
+For the first day I worked through reading the <a href="http://www.clojurebook.com/">Clojure Programming</a> book, and solving problems at <a href="http://4clojure.com">4clojure.com</a>, but I grew really restless doing that. I thought doing a tiny project may get me into the groove better, so decided a small IRC bot. After some discussion on the Hackerschool internal IRC like chat, Zulip, I decided to build a bot with the Zulip API, with <a href="https://github.com/ptn">@ptn</a>.
+
+
+
+The goal was to build a command line tool that anyone could configure with their own Zulip bot API keys, and it would help them read on terminal only content from streams they subscribed the bot to, helping to read only specific content, freeing from the noise on Zulip when you wanna work distraction free but still wanna catch important announcements. The full code is <a href="http://github.com/madhuvishy/zulip-focus">here.</a>
+
+
+
+Interesting thing I learnt was how easy it is to read and parse data structures from other clojure files. This is all that is needed to read a file and convert it into it's original data structure, a map in our case.
+
+
+```clojure
+(read-string (slurp "config.clj"))
+```
+
+
+For HTTP requests to the Zulip API we made use of the <a href="https://github.com/dakrone/clj-http">clj-http</a> library. And for parsing the string JSON responses and converting them to Clojure maps, the <a href="https://github.com/clojure/data.json">data.json</a> library.
+
+
+
+Post that I've started doing the <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/">SICP lectures</a> once again. One lecture, related book reading, and exercises done. Although I'm trying to do those in Clojure. Code for the SICP stuff is <a href="https://github.com/madhuvishy/sicp">here</a>.
+
+
+
+I've also moved from bash to zsh, only because it seemed like a cool thing to try. 
+
+
+
+Now to do more the coming week.

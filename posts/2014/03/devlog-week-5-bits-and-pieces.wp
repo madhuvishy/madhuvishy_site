@@ -1,0 +1,17 @@
+This week I did a bunch of different things, but I've made one discovery. I am addicted to Clojure. In all the languages I've tried to write in, this one took the longest to get the hang of, but it's been worth it. It just, feels great to think in this language.
+
+
+On the note of the game I built last week, I code reviewed it with one of our awesome facilitators, Zach and gained super useful insights on writing clearer and concise Clojure code. I learnt about associating <a href="http://clojure.org/metadata">metadata with collections</a>, and insight into how to better structure code. That was an incredibly useful 2 hours spent. I also talked about how I built the game for this Thursday's presentations.
+
+
+
+I made progress on my Statistics course, and also started on the Coursera Algorithms Part 1 course with a bunch of folks at HackerSchool. This is awesome, because I've never been able to get past first week in any online course, but doing it with a peer group, discussing and solving problems together keeps me socially committed and also helps understand stuff better than I did before. I implemented MergeSort(in Clojure, of course) for the first weeks problems, and on the second week now.
+
+
+
+For problem solving Friday, pairing with people at HackerSchool, I built QuickSort, and partly on a Scrabble dictionary based puzzle which I'm only half done with. (Does wrote it in Clojure go without saying?)
+
+
+
+I've also started to dabble with <a href="http://www.lighttable.com/">LightTable</a>, the awesome IDE built in ClojureScript. The plan for next week is to write a plugin for LightTable and also pick up ClojureScript on the way - I've gotten upto HelloWorld now on that. What the plugin will do, is still under construction. All I know is that it needs to use my new found interest awesome plugin - <a href="https://github.com/clojure/core.async">core.async</a> - somehow.
+

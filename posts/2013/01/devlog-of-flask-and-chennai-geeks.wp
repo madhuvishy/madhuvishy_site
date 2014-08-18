@@ -1,0 +1,132 @@
+I wrote my last devlog way back in time - Oh my goodness, in September. So
+I'm just gonna touch upon all I did over the last 5 months.
+
+
+
+<strong>BadgeIt</strong>
+
+
+
+BadgeIt[1] had many updates built into it in October, for the Google Apps
+
+Developer Challenge[2]. We made saving to Drive and opening a project from
+
+drive possible, cleaned up the UI and made it kickass. And well, mid
+
+November, we won the Challenge. Big big day.
+
+
+
+In the beginning of Jan, we built a locally running customized version of
+
+BadgeIt for our college alumni meet, that allowed generating and printing
+
+badges live during the registration. Five desks with printers setup, badges
+
+being printed for over 400 people that came that day - sweet victory.
+
+
+
+<strong>Chennai Geeks website [3]</strong>
+
+
+
+The last 2 devlogs that Karthik wrote covered Facebook-group-log[4], a cron
+
+job that fetches data from facebook open groups and puts it in our
+
+database, so we can build something useful out of it.
+
+
+
+We'd been running the job on the Chennai Geeks group[5], plus, we wanted to
+
+build a website for Chennai Geeks, so we started off combining the 2 ideas
+
+and building the site using flask[6]. I first set up a Sphinx[7] search
+
+server with the data. Then we built other things like a leader board,
+
+popular posts board, post count graphs, and permalinking posts, so you can
+
+view the entire thread without even logging into facebook, letting non
+
+Facebook users in on our awesome conversations.
+
+
+
+I wrote about this on the Chennai geeks blog[8]. Similar websites are
+
+coming up for Bangalore Startups, and probably for Chennai OCC as well.
+
+
+
+<strong>Improve Your Pitch [9]</strong>
+
+
+
+This is probably the first thing we are building off somebody else's idea,
+
+but it was Dorai's, so doesn't count I guess. The idea is to build a
+
+StackOverflow/Quora like app for people to pitch their ideas and get their
+
+pitch validated by the community, through ratings and comments/suggestions.
+
+This was flask project number 2, we have the basic MVP level stuff now - a
+
+lot more work coming up. The code for this is on bitbucket because it might
+
+turn commercial some day.
+
+
+
+<strong>Chennai Geeks hackathon</strong>
+
+
+
+It was awesome fun putting together the first Chennai Geeks hackathon[10]
+
+this weekend. Need to write blog on the hacks that were presented there.
+
+Karthik and I built a small wikipedia gadget that traces the pages you
+
+visit in wikipedia, (see xkcd 214), and builds a tree out of it. Check this
+
+sample tree out[11]. ScriptDevil pointed out such a firefox extension
+
+already exists, but who cares ;) It was fun anyway.
+
+
+
+Okay that's a lot of stuff compressed into one devlog. Somebody shoot me if
+
+I don't write these more frequently(Okay, don't glare at me, Yuvi).
+
+
+
+Links:
+
+
+
+[1] Website:<a href="http://makkarlabs.in/badgeit"> http://makkarlabs.in/badgeit</a>, Code: <a href="http://github.com/makkarlabs/badgeit">http://github.com/makkarlabs/badgeit</a>
+
+[2] <a href="http://www.google.com/events/gadc2012/winners/">http://www.google.com/events/gadc2012/winners/</a>
+
+[3] Wesite : <a href="http://chennaigeeks.in">http://chennaigeeks.in</a>, Code: <a href="http://github.com/makkarlabs/chennaigeeks">http://github.com/makkarlabs/chennaigeeks</a>
+
+[4] <a href="http://github.com/makkarlabs/facebook-group-log">http://github.com/makkarlabs/facebook-group-log</a>
+
+[5] <a href="http://facebook.com/groups/chennaigeeks">http://facebook.com/groups/chennaigeeks</a>
+
+[6] <a href="http://flask.pocoo.org">http://flask.pocoo.org</a>
+
+[7] <a href="http://sphinxsearch.com">http://sphinxsearch.com</a>
+
+[8] <a href="http://chennaigeeks.in/blog/2012/12/chennai-geeks-website/">http://chennaigeeks.in/blog/2012/12/chennai-geeks-website/</a>
+
+[9] <a href="http://improveyourpitch.com">http://improveyourpitch.com</a>
+
+[10] <a href="http://chennaigeeks.in/wiki/index.php?title=Hackathon:_Jan_2013">http://chennaigeeks.in/wiki/index.php?title=Hackathon:_Jan_2013</a>
+
+[11] <a href="http://bit.ly/10M5m59">http://bit.ly/10M5m59</a>

@@ -1,0 +1,35 @@
+This week wasn't a very productive week for me. I've been too restless thinking about leaving home next week and life after Hackerschool. Anyway, some notes from the week.
+
+
+1. I understood how to build a full stack Clojure webapp with a ring server and compojure router on the server end and Om/ClojureScript on the frontend. 
+
+
+
+2. I deployed this helloworld webapp that I built on to Heroku, my first app on Heroku. It was mostly simple because Heroku can read the project.clj file and automatically build and deploy. However there were a few gotchas on lein versions that led to ClassNotFound errors. 
+
+
+
+3. Heroku uses git for version control, but I use git too! Files like generated JavaScript files needed to go on Heroku's git, but not my repo on Github. I was super confused about how to manage two different remote endpoints. Then I figured I could make a deployment branch and commit and push all the compiled resources there. One little problem was that Heroku only redeploys the app when pushing to master. Then I learnt this little trick.
+
+
+
+```
+git push heroku deploy:master
+
+```
+
+
+
+This pushes my deployment branch on to Heroku's master, so that problem solved. 
+
+
+
+4. I've been trying to learn <a href="http://www.datomic.com/">datomic</a>, the transactional immutable database. <a href="https://github.com/lynaghk">Kevin Lynagh</a>, the Hackerschool resident for last week, gave me a 2 minute pitch on the architecture, and I've since been playing around with the in memory storage and figuring out how stuff works. This week I hope to plugin a datomic db to my app and learn how to provision storage for datomic on Heroku too. 
+
+
+
+5. The Hackerschool job fair happened this Thursday. Although I wasn't really looking to get a job, it was one awesome experience. Around 25 companies, most of them represented by Hackerschool Alumni came in and pitched in 2 minutes why we should work for them and it was followed by loads of networking with 150 people in the room trying to talk louder than each other. It was awesome meeting these companies and learning of their tech stack, culture and exciting problems. 
+
+
+
+That was last week. Hoping to shake out of my reverie and do more this last week.

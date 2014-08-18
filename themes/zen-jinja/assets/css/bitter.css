@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Muli-Light'), url('../fonts/Muli-Light.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: bold;
+  font-weight: 400;
+  src: local('Muli-Normal'), url('../fonts/Muli-Normal.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Muli-Italic'), url('../fonts/Muli-LightItalic.ttf') format('ttf');
+}
+
+.addthis_peekaboo_style a {
+  font-family: 'Muli';
+}

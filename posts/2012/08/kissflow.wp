@@ -1,0 +1,70 @@
+There is a love that exists for the <a href="http://www.facebook.com/groups/chennaigeeks/">Chennai Geeks</a> community that I always look forward to the monthly meetups. The meetups have moved to RailsFactory since June 2012 which has spiced them up all the more, pun intended.
+
+
+In the August session, <a href="http://twitter.com/manidoraisamy">Mani Doraisamy</a>, co-founder of <a href="http://orangescape.com">Orangescape</a>, gave a talk on how they built their Cloud based workflow solution, <a href="http://kissflow.com">KiSSFlow</a>.
+
+
+
+I watched the demo of KiSSFlow first when Mani presented it at the Google IO 2012, and was proud - Chennai at IO. Wow. My wow moment got bigger today, when he said, that it was the first time ever that Google was showcasing a product company in the cloud theme at IO!
+
+
+
+<strong>The Problem</strong>
+
+
+
+Emails, Forms, and Documents are part of all workflows. But to keep track of all these could become cumbersome. Also, existing workflow solutions are complex, and built not from the customer's pain point but the company's, hence not user friendly.
+
+
+
+<strong>The Pitch</strong>
+
+
+
+KiSSFlow is a SaaS enterprise application that makes creating business workflows in your organizations very simple. With millions of companies <a href="http://gonegoogle.com">Gone Google</a>, it leverages on Google apps and lets you create workflows in a simple 5 step process in the comfort of the familiar Google forms and docs, and a Gmail like interface.
+
+
+
+<strong>The Decisions</strong>
+
+
+
+Keeping with the <a href="http://en.wikipedia.org/wiki/KISS_principle">KiSS</a> principle, which is the <em>in</em> thing today, KiSSFlow focuses only on 85% of the use cases, but the features that solve them are kick-ass, not half-assed.
+
+
+
+Enterprise workflow solutions today do not empathize with the customer's need, instead, try to sell them a whole lot of incomprehensible concepts that the customer has to adopt to, because they do not want to narrow down their solutions to a specific market. KiSSFlow takes that step, by focusing on Google apps customers, hence simplifying BPM concepts like Role Based Access Control to something as plain as Google groups.
+
+
+
+And with focusing on Google Apps came a hoard of free goodies. Getting covered by <a href="http://techcrunch.com/2012/06/27/orangescape-kissflow-launch/">TechCrunch</a>, a slot at <a href="http://www.youtube.com/watch?v=2H188W_JS5g">Google IO</a>, and being Google's sole cloud technology <a href="http://blog.orangescape.com/2012/07/25/google-announces-orangescape-as-cloud-technology-partner-for-google-app-engine/">partners</a>, because they filled in the gap between Google and enterprises, at the right time.
+
+
+
+<strong>Underneath</strong>
+
+
+
+Beneath the simplicity and familiarity of the KiSSFlow interface, runs an intelligent rule engine built using Orangescape's <a href="http://orangescape.com/paas">Visual PaaS</a>. It runs above Google App Engine Python and Cloud SQL. Each organization has a separate database on Cloud SQL, to ensure security and administration privileges. The UX design concepts are borrowed from Gmail, and designed using <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.
+
+
+
+<strong>Learnings</strong>
+
+
+
+<em>What does Mani Doraisamy, the Product Manager of KiSSFlow recommend for people trying to develop enterprise apps?</em>
+
+</p><ul>
+	<li>Have the UI flow in place first. Go Flow -&gt; Screens -&gt; Code</li>
+	<li>The text on your app is very important. Get creative people like bloggers in your company to write them.</li>
+	<li>Usability testing is key to a successful product. Watch your users try the app remote on Webex, and do so necessarily with your team. Never sit next to the user and hint.</li>
+	<li>Insights from usability testing might often hurt your developer's ego. Learn the knack of convincing them.</li>
+	<li>Learn to say No to certain features to your customers. It won't make you lose your deal.</li>
+</ul>
+
+The pleasure of meeting Dorai and others from the community, Senthil's unmatched hospitality, and Mani's insightful talk, another Chennai Geeks session that was awesome to be at.
+
+
+
+Update: Check out the talk slides here - <a href="http://kissflow.com/google-apps-workflow-users-groups-roles/">http://kissflow.com/google-apps-workflow-users-groups-roles/</a>.
