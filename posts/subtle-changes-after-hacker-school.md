@@ -2,7 +2,7 @@
 .. title: Subtle Changes after Hacker School
 .. slug: subtle-changes-after-hacker-school
 .. date: 2014-08-19 10:52:42 UTC-04:00
-.. tags: Hacker School, community 
+.. tags: HackerSchool, community, Geek
 .. link: 
 .. description: 
 .. type: text
