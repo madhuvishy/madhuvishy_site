@@ -17,7 +17,7 @@ One highlight of Strange Loop for me was that there were so many Hacker Schooler
 
 I reached St.Louis on Tuesday, 16th, and got together with Pablo and Lita, my W'14 batchmates for dinner at Pi's Pizza. We did some exploring and walking around, and it was super fun catching up with them.
 
-![Dinner with Pablo and Lita](/images/strangeloop/dinner1.jpg =200x100)
+![Dinner with Pablo and Lita](/images/strangeloop/dinner1.jpg)
 
 Wednesday evening, before the preconference party, there was a small meetup where over 50 women attending the conference came - Lambda Ladies go bowling, at Flamingo Bowl. It was awesome fun to bowl, and by some twisted luck I tied at the top of my team bowling :'D It was also great connecting with everyone there.
 
@@ -33,7 +33,7 @@ The conference happened on Thursday and Friday, and I'll get to that later, but 
 
 I also went to a baseball game between the Cardinals and Reds on Friday evening, with Pablo and Denise, and except for the fact we din't understand the game and clapped and cheered whenever the rest of the crowd did, it was super great :D
 
-![Baseball game](/images/strangeloop/baseball.jpg)
+![Baseball game](../images/strangeloop/baseball.jpg)
 
 
 ###Learning
@@ -74,7 +74,7 @@ Where [Ian Davis](https://twitter.com/jungziege), engineer at Prismatic talks ab
 
 And, of course when [Sam Aaron](https://twitter.com/samaaron) and [Carin Meier](https://twitter.com/gigasquid) in the final [keynote](https://www.youtube.com/watch?v=3_zW63dcZB0), **made robots dance to live music by writing Clojure!!!**
 
-![Robots dance](/images/strangeloop/robots.jpg)
+![Robots dance](../images/strangeloop/robots.jpg)
 
 ###StarStruck
 
