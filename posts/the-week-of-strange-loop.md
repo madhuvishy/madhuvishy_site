@@ -42,7 +42,7 @@ If you were thinking after reading all the above, did you go to the conference o
 
 All talks are [here](https://www.youtube.com/channel/UC_QIfHvN9auy2CoOdSfMWDw/videos)
 
-Some of the favorites among talks I went to, in no particular were:
+Some of the favorites among talks I went to, in no particular order were:
 
 * [Jepsen2- Linearizable Boogaloo](https://www.youtube.com/watch?v=QdkS6ZjeR7Q)
 

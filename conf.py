@@ -279,7 +279,7 @@ REDIRECTIONS = [["2014/02/week-2-at-hacker-school-learning/index.html", "/posts/
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = ["rsync -r output/* ssngeek@ssngeek.webfactional.com:/home/ssngeek/webapps/madhuvishy_in/"]
+DEPLOY_COMMANDS = {"default": ["rsync -r output/* ssngeek@ssngeek.webfactional.com:/home/ssngeek/webapps/madhuvishy_in/"]}
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
@@ -764,3 +764,5 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+
+WRITE_TAG_CLOUD = True
